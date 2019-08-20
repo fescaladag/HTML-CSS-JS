@@ -1,2 +1,2 @@
-# WebGatitos 
-Este es un tutorial de HTML/CSS
+# Primeros pasos Front End
+Este es un tutorial de HTML/CSS/JS
