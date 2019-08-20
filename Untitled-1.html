@@ -1,0 +1,151 @@
+<!--Comment-->
+<!DOCTYPE html>
+<html>
+  <!-- Your HTML code goes here -->
+
+<!--ESTILOS CSS-->
+<!--<h2 style="color: blue;">CatPhotoApp</h2> asi se da estilo indivuidual pero mejor con <style> -->
+
+
+<!--importar fuente de google-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Old Standard TT" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet" type="text/css">
+
+
+
+<style>
+  [type ='radio']{
+margin: 10px 0px 50px 0px;
+  }
+
+
+
+.blue-text {
+    color: darkcyan;
+  }
+
+h2{font-size: 30px;
+font-family:lobster;
+
+}
+
+P{font-size: 17px;
+font-family: barlow;
+}
+
+.larger-image {
+    width: 250px;
+  }
+
+  .thin-green-border {
+    border-color:lawngreen;
+    border-width: 5px;
+    border-style: solid;
+   /* border-radius: 50%; para hacer las imagenes circulares*/
+   border-radius: 10px;
+  }
+
+.silver-backgroud{
+    background-color: silver;
+    font-family: barlow;
+}
+
+/*para aplicar estilo a un id
+#cat-photo-form {
+  background-color: green;
+}
+*/
+
+
+</style>
+<!--ENCABEZADO----------------------------------------------------------------->
+<head>
+    <title>Pagina de Prueba</title>
+    <h2 class="blue-text">CatPhotoApp</h2>  
+</head>
+<!--FIN ENCABEZADO----------------------------------------------------------------->
+
+<body>
+
+<main>
+  <p class="blue-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+     <a href="#"  ><img class="larger-image thin-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Author standing on a beach with two thumbs up.">  </a> 
+        <p></p>
+        <a href="#footer">this links to Contacts</a>
+<!--LINK EN LA IMAGEN-->
+            <p>Here's a <a target="_blank" href="#"> link to freecodecamp.org</a> for you to follow.</p>
+                
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, 
+                hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, 
+                shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. 
+                Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, 
+                hairball run catnip eat the grass sniff.</p>
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur 
+                catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, 
+                hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the 
+                couch sleep in the sink fluffy fur catnip scratched.</p>
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, 
+                scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. 
+                Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from 
+                cops stops to pet cats, goes to jail.</p>
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. 
+                Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and 
+                mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. 
+                Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+<!--LISTAS --------------------------------------------------->
+            <div class="silver-backgroud">   
+            <p>Things cats love:</p>
+                <ul >
+                  <li>cat nip</li>
+                  <li>laser pointers</li>
+                  <li>lasagna</li>
+                </ul>
+                <p>Top 3 things cats hate:</p>
+                <ol>
+                  <li>flea treatment</li>
+                  <li>thunder</li>
+                  <li>other cats</li>
+                </ol>
+            </div> 
+<!--FORMULARIO------------------------------>
+                <form id="cat-photo-form" action="/submit-cat-photo">
+                    <input type="text" required placeholder="cat photo URL">
+                    <!--Submit Button-->
+                    <button type="submit">Submit</button>
+                    <!--Radio Buttons-->
+                    <p></p>
+                    <label for="indoor"> 
+                            <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor 
+                    </label>
+                   
+                    <label for="outdoor"> 
+                            <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor 
+                    </label>
+                    <!--Check Boxes-->
+                    <p></p>
+                    <label for="loving"><input id="loving" type="checkbox" name="personality" checked> Loving
+                    </label>
+                    <label for="loving"><input id="loving" type="checkbox" name="personality"> Beautiful
+                    </label>
+                    <label for="loving"><input id="loving" type="checkbox" name="personality"> Funny
+                    </label>
+
+                </form>
+
+                  
+
+                </main>
+<footer id="footer">    
+  
+    <p>Copyright Cat Photo App</p> 
+
+</footer>
+
+</body>
+</html>
