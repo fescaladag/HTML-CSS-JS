@@ -1,0 +1,31 @@
+<style>
+
+body{
+
+background-color: black;
+color: aquamarine;
+font-family: monospace;
+}
+
+
+
+.pink-text{
+    color: pink !important /*  By adding !important you can make this declaration overrides any other  that
+    
+     }
+
+/*second declaration  take precedence over the first */ 
+.blue-text{
+    color: blue; 
+     }
+
+/*ids always take precedence regardless of where they are declared  */ 
+#orange{
+color: orange;
+}
+
+</style>
+
+
+<!--An inline Style overrides all CSS declarations-->
+<h1 style="color: green" id="orange" class="pink-text blue-text" >"Hello World</h1>
