@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <title>Mi pagina</title>
+                <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+                <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+                <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+            </head>
+            
+            
+            <style>
+            @font-face {
+              font-family: "SourceSerifVariable";
+              src: url("./Fonts/SourceSerifVariable-Roman.ttf");
+            }
+            
+            @font-face {
+              font-family: "LeagueSpartanVariable";
+              src: url("./Fonts/LeagueSpartanVariable.ttf");
+            }
+            
+            
+            @font-face {
+              font-family:"Bebas";
+              src: url("./Fonts/Bebas-Regular.ttf");
+            }
+            
+            
+            
+            .encabezado{
+            height: 60px;
+            }
+            
+            
+            #logo_header{
+                float: left;
+            }
+            
+            
+            #logo_header .site_name{
+                font-size:2em;
+              margin-left:5vw; /* 1VW =1% Ancho maximo de la pantalla*/
+             
+                font-family: Anton;
+                text-align: center;
+                color:rgb(36, 36, 36);
+                padding:0 1vh 0 1vh;
+                display: inline-block;
+            
+            }
+            
+            .encabezado ul{
+                height: 60px;
+                list-style: none; 
+            
+            
+            }
+            
+            ul li{           
+            position:relative;
+            left:4vh;
+            top:2.5vh;
+            padding-left: 3.0vh;
+            padding-right: 3.0vh;
+            text-align: center;
+            float: left;
+            font-family:"LeagueSpartanVariable";
+            
+            }
+            
+            ul li a{	
+                color:rgb(190, 190, 190);
+                position: relative;
+                text-decoration: none;
+            }
+            
+            
+            a:hover, a:focus, a:active {
+                color: black;      
+                transition:  color 2s, background-color 1s,padding 0.5s ease-in;
+             
+            }
+            
+            a::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                height: 3px;
+                width: 200%;
+                background-color: red;
+                transform-origin: right top;
+                transform: scale(1, 0);
+            
+            }
+            
+            a:active::before {
+                background-color: #000;
+            }
+            a:hover::before, a:focus::before {
+                transform-origin: left top;
+                transform: scale(0.5, 0.5);
+            }
+
+            .img-container{
+            display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(10vh, 1fr));
+    grid-template-rows: repeat(1,35vh);
+    padding-bottom: 1vw;
+            }
+
+.img-container > div> img{
+
+width: 100%;
+height:100%;
+object-fit: cover;
+}
+
+.container {
+  background-color: rgb(255,238,173);
+  font-family:Arial, Helvetica, sans-serif;
+
+  color:white;
+  display:grid;
+  grid-template-columns: repeat(12, minmax(100px,1fr));
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+  grid-template-areas: 
+  
+"t t t t t t t t t t t t"
+"c c c c c c c c c c c c"
+". . f f f f f f f f f f"
+}
+
+
+.titulo{
+
+    grid-area:t;
+    text-align: center;
+
+}
+
+
+.titulo > blockquote > p{
+  
+  color : rgba(235, 150, 108, 0.8); 
+  display : inline; 
+  font-family : 'Libre Baskerville', serif;
+  font-style : italic; 
+  font-size : 1em; 
+  line-height :1.3em; 
+  text-shadow : 0 1px 1px rgba(255, 255, 255, 0.5);
+
+  
+}
+
+.content{
+  grid-area: c;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,1fr));
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  --title-color: rgb(160, 203, 252);
+  --content-color:rgb(90, 90, 90);
+}
+
+h3{
+    color:var(--title-color);
+
+}
+
+.content-1>p{  
+    font-size:0.7em;
+    color: var(--c)
+
+}
+
+.content-2>p{  
+    font-size:0.7em;
+}
+
+
+
+
+</style>
+<body>   
+
+
+        <header class="encabezado">
+        <a id ="logo_header"><span class="site_name">STUDIOPRESS</span></a>
+            <nav class="nav_bar">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>    
+                   <span><br></span>  
+                  </nav>
+              
+        </header> <!--end header-------------------------------------------------------------------------->
+
+
+        <section>
+                <div class="img-container">
+                  <div> <img id="img_principal" src="./Img/4.jpg"  alt="principal">
+                  
+                  </div>    
+                </div>
+        </section> <!--end img header-------------------------------------------------------------------------->
+
+
+ 
+<div class="Container"">   
+   
+    <div class="titulo">
+            <blockquote cite="http://www.gutenberg.org/ebboks/11">  
+                <p>  "If you don't know where are you going, <br>any road will get you there"</p>
+              </blockquote>
+    </div>
+
+    <div class="content">
+       <div class="content-1">
+<h3>Titulo</h3>
+<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto</p>
+
+
+       </div>
+       <div class="content-2">
+            <h3>Titulo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto</p>
+
+       </div>
+    </div>
+
+
+    
+
+    <div class="footer">Footer</div>
+
+</div><!---------------------end container------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
